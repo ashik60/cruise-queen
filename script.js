@@ -46,7 +46,7 @@ function modalText() {
   setInnerText("economy-class-numbers", getInputValue("economy-class-tickets").value);
   setInnerText("modal-subtotal-cost", getInputValue("subtotal-cost").innerText);
   setInnerText("modal-vat", getInputValue("vat").innerText);
-  setInnerText("modal-total", getInputValue("total-cost").innerText);
+  setInnerText("modal-total-cost", getInputValue("total-cost").innerText);
 }
 
 
