@@ -16,6 +16,8 @@ function handleTicketAmount(ticketClass, increasing) {
   calculateCost();
 }
 
+
+// Calculate and Update Cost
 function calculateCost() {
   const firstClassFare = 150;
   const economyClassFare = 100;
@@ -33,18 +35,8 @@ function calculateCost() {
   setInnerText("total-cost", "$" + totalCost);
 }
 
-// Get input from form
-function getInputValue(id) {
-  const formInput = document.getElementById(id);
-  return formInput;
-}
 
-// Set innertext of cost and modal
-function setInnerText(id, text) {
-  let idSelector = document.getElementById(id);
-  idSelector.innerText = text;
-}
-
+// Sets text to modal dialogue
 function modalText() {
   setInnerText("departure", getInputValue("departure-from").value);
   setInnerText("destination", getInputValue("destination-to").value);
@@ -55,4 +47,18 @@ function modalText() {
   setInnerText("modal-subtotal-cost", getInputValue("subtotal-cost").innerText);
   setInnerText("modal-vat", getInputValue("vat").innerText);
   setInnerText("modal-total", getInputValue("total-cost").innerText);
+}
+
+
+// Get input from form
+function getInputValue(id) {
+  const formInput = document.getElementById(id);
+  return formInput;
+}
+
+
+// Set innertext of cost and modal
+function setInnerText(id, text) {
+  let idSelector = document.getElementById(id);
+  idSelector.innerText = text;
 }
